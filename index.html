@@ -1,22 +1,83 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Il Mio Sito Web</title>
-  <style>
-    body { font-family: Arial, sans-serif; max-width: 800px; margin: 40px auto; }
-    nav a { display: block; margin: 10px 0; font-size: 1.1em; }
-  </style>
+    <meta charset="UTF-8">
+    <title>Il Mio Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Benvenuto nel mio sito</h1>
-  <nav>
-    <a href="Pagine/Mantova/index.html">vai a esercizio mantova</a>
-    <a href="Pagine/Mondo degli animali/index.html">vai a esercizio mondo degli animali</a>
-    <a href="Pagine/Orario/index.html">Vai a esercizio orario</a>
-    <a href="Pagine/Esercizio_lab/index.html">Vai a esercizio lab</a>
 
+  <!-- Navigazione principale -->
+  <nav id="nav-principale">
+      <ul>
+          <li><a href="#about" class="nav-link">Chi sono</a></li>
+          <li><a href="#competenze" class="nav-link">Competenze</a></li>
+          <li><a href="#progetti" class="nav-link">Progetti</a></li>
+          <li><a href="#contatti" class="nav-link">Contatti</a></li>
+      </ul>
   </nav>
+
+  <!-- Sezione Hero: l'impatto iniziale -->
+  <header class="hero">
+      <h1>Marco Ballabio</h1>
+      <p class="hero-intro">
+          Sviluppatore web in formazione. Sto imparando HTML, CSS e JavaScript
+          costruendo questo portfolio passo dopo passo.
+      </p>
+      <a href="#progetti" class="btn">Guarda i miei progetti</a>
+  </header>
+
+  <!-- Sezione About -->
+  <section id="about" class="sezione">
+      <h2>Chi sono</h2>
+      <p>Sono Marco Ballabio, uno studente della scuola Jean Monnet di Mariano Comense e frequento l'indirizzo di informatica.</p>
+      <p>Amo tenermi in movimento facendo diversi sport anche se quelli che pratico di più sono calcio e arrampicata. Mi piace anche andare in montagna a camminare e stare a contatto con la natura.</p>
+      <blockquote>
+          <p>Il successo non è un caso. È duro lavoro, perseveranza, apprendimento, studio, sacrificio e, soprattutto, amore per ciò che stai facendo o imparando a fare."</p>
+          <footer>— Pele</footer>
+      </blockquote>
+  </section>
+
+  <!-- Sezione Competenze -->
+  <section id="competenze" class="sezione">
+      <h2>Competenze</h2>
+      <ul class="lista-competenze">
+          <li><strong>HTML</strong> — struttura semantica e accessibilità</li>
+          <li><strong>CSS</strong> — cascade, box model, selettori</li>
+          <li><strong>JavaScript</strong> — basi in corso di apprendimento</li>
+          <li><strong>Git</strong> — versionamento e GitHub</li>
+          <li><strong>VS Code</strong> — editor e estensioni</li>
+      </ul>
+  </section>
+
+  <!-- Sezione Progetti (Segnaposto) -->
+  <section id="progetti" class="sezione">
+    <h2>Progetti</h2>
+    <div class="card">
+        <h3>Mantova</h3>
+        <p>Primo esercizio di teoria con html e css</p>
+        <a href="Pagine/Mantova/index.html" class="btn-small">Vedi dettagli</a>
+    </div>
+    <div class="card">
+        <h3>Mondo degli animali</h3>
+        <p>Esercizio di laboratorio</p>
+        <a href="Pagine/Mondo degli animali/index.html" class="btn-small">Vedi dettagli</a>
+    </div>
+    <div class="card">
+        <h3>Orario</h3>
+        <p>Primo esercizio di laboratorio</p>
+        <a href="Pagine/Orario/index.html" class="btn-small">Vedi dettagli</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer-principale">
+      <p>&copy; 2026 Marco Ballabio — Portfolio in costruzione</p>
+      <ul>
+          <li><a href="https://github.com/Sballabiaz" class="footer-link">GitHub</a></li>
+          <li><a href="#" class="footer-link">LinkedIn</a></li>
+      </ul>
+  </footer>
+
 </body>
 </html>
