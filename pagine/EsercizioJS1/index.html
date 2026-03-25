@@ -1,22 +1,36 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Esempio di funzione JavaScript</title>
-    <script>
-        // Questa funzione verrà chiamata quando l'utente clicca il bottone
-        function cambiaTesto() {
-            document.getElementById("demo").innerHTML = "Hello JavaScript!";
-        }
-    </script>
-</head>
+    <head>
 
-<body>
+        <title>Esempio di funzione JavaScript</title>
+        <script>
+            
+            function saluta() {
+                console.log("Hai cliccato il bottone!");
+            }
 
-    <h2>What Can JavaScript Do?</h2>
+            window.onload = function(){
+                let bottone = document.getElementById("cliccaBottone");
+                bottone.addEventListener("click", saluta());
+            }
+            
 
-    <p id="demo">JavaScript can change HTML content.</p>
+            // Questa funzione verrà chiamata quando l'utente clicca il bottone
+            function cambiaTesto() {
+                document.getElementById("demo").innerHTML = "Hello JavaScript!";
+            }
+        </script>
+    </head>
 
-    <button type="button" onclick="cambiaTesto()">Click Me!</button>
+    <body>
 
-</body>
+        <h2>What Can JavaScript Do?</h2>
+
+        <p id="demo">JavaScript can change HTML content.</p>
+
+        <button type="button" onclick="cambiaTesto()">Click Me!</button>
+
+        <button type="button" id = "cliccaBottone">Clicca qui!</button>
+
+    </body>
 </html>
