@@ -1,0 +1,66 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7f6;
+    line-height: 1.6;
+}
+
+.header {
+    background-color: #3e7b73;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.contenitore-schede {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.scheda {
+    background-color: white;
+    margin-bottom: 25px;
+    padding: 25px;
+    border-radius: 12px;
+    border-left: 8px solid #3e7b73;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.scheda h3 {
+    margin-top: 0;
+    color: #3e7b73;
+    font-size: 1.5em;
+}
+
+.scheda strong {
+    color: #c0392b; /* Colore rosso per evidenziare la velocità */
+}
+
+.azioni {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.btn {
+    background-color: #333;
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: #3e7b73;
+}
+
+.footer {
+    background-color: #333;
+    color: #ccc;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+}

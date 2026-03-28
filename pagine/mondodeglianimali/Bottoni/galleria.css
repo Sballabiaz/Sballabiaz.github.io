@@ -1,0 +1,74 @@
+/* RESET SEMPLICE */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; 
+    color: #333;
+    text-align: center;
+}
+
+/* HEADER */
+.header {
+    background-color: #3e7b73;
+    color: white;
+    padding: 30px;
+}
+
+.titolo-animale {
+    color: #3e7b73;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+    text-transform: uppercase;
+}
+
+.gruppo-foto {
+    display: flex;          /* Allinea gli elementi orizzontalmente */
+    flex-wrap: wrap;       /* Mette gli elementi a capo se non c'è spazio */
+    justify-content: space-around; 
+    max-width: 90%;         
+    margin: 0 auto;        
+    padding: 10px;
+}
+
+.contenitore-foto {
+    background-color: white;
+    margin: 15px;           
+    padding: 10px;         
+    flex: 1 1 300px;        /* Dimensione base flessibile (minimo 300px) */
+    max-width: 400px;       
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-sizing: border-box;  
+}
+
+.contenitore-foto img {
+    width: 100%;             
+    height: auto;            
+    border-radius: 4px;
+    display: block;          
+}
+
+.btn-home {
+    display: inline-block;
+    background-color: #3e7b73;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.btn-home:hover {
+    background-color: #2d5a54;
+}
+
+.footer {
+    padding: 50px 20px;
+    background-color: #333;
+    color: white;
+    margin-top: 50px;
+}
