@@ -189,7 +189,7 @@ blockquote {
 /* Decorazione Titoli */
 .sezione h2::after {
     content: "";
-    display: block;
+    display: block; /*mostra il contenuto nascosto (visto in laboratorio)*/
     width: 40px;
     height: 3px;
     background-color: #10b981;
