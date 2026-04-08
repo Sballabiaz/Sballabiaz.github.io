@@ -66,3 +66,8 @@ ul, ol {
     margin-top: 40px;
     font-size: 0.9em;
 }
+
+a {
+    color: #10b981;
+    text-decoration: none;
+}

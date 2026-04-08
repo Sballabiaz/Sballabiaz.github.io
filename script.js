@@ -1,6 +1,6 @@
 function inizializzaParagrafi()
 {
-    let titoli = document.querySelectorAll(".domanda");
+    let titoli = document.querySelectorAll(".titolo");
 
     for(let i=0;i<titoli.length;i++)
       titoli[i].addEventListener("click",gestisciClickTitolo);

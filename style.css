@@ -12,12 +12,10 @@ body {
     max-width: 900px;
     margin: 0 auto;
     padding: 0 1.5rem;
-    scroll-behavior: smooth; /* Scorrimento fluido verso i contatti */
 }
 
 h1, h2, h3 { color: #ffffff; }
 
-/* Link generali */
 a {
     color: #10b981; 
     text-decoration: none;
@@ -32,8 +30,7 @@ a:hover { color: #34d399; }
     padding: 1rem 1.5rem;
     border-bottom: 2px solid #10b981;
     position: sticky; /* la barra rimane in alto mentre scorri */
-    top: 0;
-    z-index: 1000;
+    top: 0; /* la barra rimane in alto mentre scorri */
 }
 
 #nav-principale ul {
@@ -60,11 +57,10 @@ a:hover { color: #34d399; }
 
 .nav-link:hover { 
     color: #10b981;
-    transform: translateY(-2px); /* Effetto sollevamento al passaggio del mouse */
+    transform: translateY(-2px); /* Effetto di sollevamento al passaggio del mouse */
     transition: 0.3s;
 }
 
-/* HERO SECTION */
 .hero {
     background: linear-gradient(135deg, #0f172a 0%, #060a0f 100%);
     color: #ffffff;
@@ -102,10 +98,16 @@ a:hover { color: #34d399; }
     box-shadow: 0 0 20px rgba(16, 185, 129, 0.3); 
 }
 
-/* SEZIONI E CARD */
 .sezione {
     margin-bottom: 4rem;
     padding-top: 1rem;
+}
+
+.container-progetti {
+    display: grid; /* Trasforma il contenitore in una griglia */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Crea colonne larghe almeno 300px. Se c'è spazio, ne mette pù di una, altrimenti una. */
+    gap: 1.5rem;
+    margin-top: 2rem;
 }
 
 .card {
@@ -113,7 +115,6 @@ a:hover { color: #34d399; }
     border: 1px solid #1e293b;
     border-radius: 10px;
     padding: 1.5rem;
-    margin-bottom: 1.5rem; 
     transition: 0.3s;
 }
 
@@ -132,7 +133,6 @@ a:hover { color: #34d399; }
     letter-spacing: 1px;
 }
 
-/* COMPETENZE E DETTAGLI */
 .lista-competenze li {
     padding: 0.8rem 0;
     border-bottom: 1px solid #1e293b;
@@ -163,7 +163,15 @@ blockquote {
 
 .domanda .titolo { color: #f1f5f9; }
 
-/* FOOTER */
+.domanda .contenuto{
+    display: none;
+    padding: 20px 20px;
+}
+
+.contenuto.visible {
+    display: block;
+}
+
 .footer-principale {
     border-top: 1px solid #1e293b;
     margin-top: 4rem;

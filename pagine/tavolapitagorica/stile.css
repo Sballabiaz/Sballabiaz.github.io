@@ -12,3 +12,7 @@ td {
 table {
 	border-collapse: collapse;
 }
+
+footer {
+	margin-top: 6rem;
+}
