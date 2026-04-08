@@ -1,29 +1,27 @@
-function InizializzaParagrafi(){
-    
+function inizializzaParagrafi()
+{
     let titoli = document.querySelectorAll(".titolo");
+
+    for(let i=0;i<titoli.length;i++)
+      titoli[i].addEventListener("click",gestisciClickTitolo);
     
-    for(let i = 0; i < titoli.length; i++){
-        //aggiunge evento legato al click
-        titoli[i].addEventListener("click", gestisciClickTitolo);
-    }
 }
 
-function gestisciClickTitolo(){
-    
-    let contenuto = this.nextElementSibling; //prende il prossimo elemento del dom rispetto a quello che clicco e lo metto in contenuto 
-    
-    if(contenuto.classList.contains("visible")){
+function gestisciClickTitolo()
+{
+    let contenuto = this.nextElementSibling;
+    if(contenuto.classList.contains("visible"))
+    {
         contenuto.classList.remove("visible");
-    } else{
-        
-        let tuttiContenuti = documento.querySelectorAll(".contenuto");
-        
-        for(let i = 0; i < tuttiContenuti.length; i++){
+    }
+    else{
+        let tuttiContenuti = document.querySelectorAll(".contenuto");
+        for(let i=0;i<tuttiContenuti.length;i++)
+        {
             tuttiContenuti[i].classList.remove("visible");
         }
-
-        contenuto.classList.add("visible")
+        contenuto.classList.add("visible");
     }
 }
 
-document.addEventListener("DOMContentLoaded", InizializzaParagrafi)
+document.addEventListener("DOMContentLoaded",inizializzaParagrafi);
