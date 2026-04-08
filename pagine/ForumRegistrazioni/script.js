@@ -48,3 +48,9 @@ function riempiConAnni(){
     }
     menu.innerHTML = html;
 }
+
+let txt1 = document.getElementById("textbox")
+
+function StampaText(){
+    console.log(txt1.value);
+}

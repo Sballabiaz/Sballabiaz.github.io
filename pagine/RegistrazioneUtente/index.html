@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>RegistrazioneUtente</title>
+    </head>
+
+    <body>
+        <h1>Registrazione Utente</h1>
+        
+        <label>Nome: </label> 
+        <input type="text" id="txt1">
+        <br>
+        <br>
+        <label>Cognome: </label> 
+        <input type="text" id="txt2">
+        <br>
+        <br>
+        <label>Codice Fiscale: </label> 
+        <input type="text" id="txt3">
+        <br>
+        <br>
+        <label>Sesso: </label>
+        <input type = "radio" id="maschio" name="sesso" value="maschio">
+        <label>Maschio</label>
+        <input type = "radio" id="femmina" name="sesso" value="femmina">
+        <label>Femmina</label>
+        <br>
+        <br>
+        <select id="menu"></select>
+        <br>
+        <br>
+        <input type="checkbox" id ="termini" class="termini&servizi" value="accettato"> 
+        <label>Accetto termini e servizi</label>
+        <br>
+        <br>
+        <button onclick="StampaRegistrazione()">REGISTRATI</button>
+
+        <script src="script.js"></script>
+
+    </body>
+</html>

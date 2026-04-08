@@ -19,14 +19,14 @@ h1, h2, h3 { color: #ffffff; }
 
 /* Link generali */
 a {
-    color: #10b981; /* VERDE SMERALDO */
+    color: #10b981; 
     text-decoration: none;
     transition: 0.3s;
 }
 
 a:hover { color: #34d399; }
 
-/* --- NAVIGAZIONE --- */
+/* NAVIGAZIONE */
 #nav-principale {
     background-color: #0f172a;
     padding: 1rem 1.5rem;
@@ -64,7 +64,7 @@ a:hover { color: #34d399; }
     transition: 0.3s;
 }
 
-/* --- HERO SECTION --- */
+/* HERO SECTION */
 .hero {
     background: linear-gradient(135deg, #0f172a 0%, #060a0f 100%);
     color: #ffffff;
@@ -77,7 +77,7 @@ a:hover { color: #34d399; }
 .hero h1 { 
     font-size: 3rem; 
     margin-bottom: 1rem;
-    color: #10b981; /* Nome in verde */
+    color: #10b981;
 }
 
 .hero-intro {
@@ -99,16 +99,15 @@ a:hover { color: #34d399; }
 
 .btn:hover { 
     background-color: #34d399;
-    box-shadow: 0 0 20px rgba(16, 185, 129, 0.3); /* Bagliore verde */
+    box-shadow: 0 0 20px rgba(16, 185, 129, 0.3); 
 }
 
-/* --- SEZIONI E CARD --- */
+/* SEZIONI E CARD */
 .sezione {
     margin-bottom: 4rem;
     padding-top: 1rem;
 }
 
-/* Lasciato impilato in verticale (da risolvere con Grid in futuro) */
 .card {
     background-color: #0f172a;
     border: 1px solid #1e293b;
@@ -133,7 +132,7 @@ a:hover { color: #34d399; }
     letter-spacing: 1px;
 }
 
-/* --- COMPETENZE E DETTAGLI --- */
+/* COMPETENZE E DETTAGLI */
 .lista-competenze li {
     padding: 0.8rem 0;
     border-bottom: 1px solid #1e293b;
@@ -164,7 +163,7 @@ blockquote {
 
 .domanda .titolo { color: #f1f5f9; }
 
-/* --- FOOTER (CONTATTI) --- */
+/* FOOTER */
 .footer-principale {
     border-top: 1px solid #1e293b;
     margin-top: 4rem;
