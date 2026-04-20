@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <title>Quiz</title>
+</head>
+<body>
+    <h2>Quiz Di Informatica</h2>
+    <h3>Dati anagrafici</h3>
+    <label>Cognome: </label>
+    <input type="text" id="textBoxCognome">
+    <label> Nome: </label>
+    <input type="text" id="textBoxNome">
+    <br>
+    <br>
+    <label>Data di nascita</label>
+    <br>
+    <br>
+    <label>Giorno: </label>
+    <input type="text" id="textBoxGiorno">
+    <label> Mese: </label>
+    <select id="comboBoxMesi"></select>
+    <label>Anno: </label>
+    <input type="text" id="textBoxAnno">
+    <br>
+    <h2>Domande</h2>
+    <h4>1 Qual'è il linguaggio utilizzato per creare e modificare database? (in maiuscolo)</h4>
+    <input type="text" id="risposta1">
+    <h4>2 Quanti valori può assumere una variabile booleana? </h4>
+    <select id="risposta2"></select>
+    <h4>3  Quali sono le librerie caricate a run-time? </h4>
+    <input type="radio"  id="statiche" name="librerie" value="statiche" checked>
+    <label>Statiche</label>
+    <br>
+    <input type="radio"  id="dinamiche" name="librerie" value="dinamiche">
+    <label>Dinamiche</label>
+    <br>
+    <h4>4  Quali tra queste sono parole chiave in C++? </h4>
+    <input type="checkbox" id="check1">
+    <label>void</label>
+    <br>
+    <input type="checkbox" id="check2">
+    <label>integer</label>
+    <br>
+    <input type="checkbox" id="check3">
+    <label>char</label>
+    <h4>5  8 bit corrispondono a un... </h4>
+    <input type="text" id="risposta5" >
+    <br>
+    <h2>Esito</h2>
+    <button onclick = "stampaPunteggio()">Elabora</button>
+    <input type="text" id="txtPunteggio" readonly>
+    <button onclick = "stampaPunteggioUtente()">Utente con punteggio</button>
+    <input type="text" id="txtPunteggio2" readonly>
+    <br>
+    <a href="https://Sballabiaz.github.io/index.html">← Torna alla Home</a>
+
+    <br>
+
+    <script src="script.js"></script>
+</body>
+</html>
