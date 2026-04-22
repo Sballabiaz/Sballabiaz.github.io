@@ -7,10 +7,17 @@ function setCookie(nome, valore, giorni){
 
 function getCookie(nome){
     let cookies = document.cookie.split(";");
-    
+    for (let i = 0; i < cookies.length; i++){
+        let c = cookies[i].trim();
+        if(c.startsWith(nome+"=")){
+            return decodeURIComponent(c.substring(nome.length+1))
+        }
+    }
+    return "";
 }
 
 function salvaDati(){
+    
     let nome = document.getElementById("nome").value;
     let cognome = document.getElementById("cognome").value;
     setCookie("nome", nome, 1);
@@ -19,6 +26,7 @@ function salvaDati(){
 }
 
 function caricaRiepilogo(){
+    
     let nome = getCookie("nome");
     let cognome = getCookie("cognome");
     let s ="";
@@ -26,4 +34,6 @@ function caricaRiepilogo(){
     s += "<br>";
     s += "Cognome: " + cognome;
     document.getElementById("riepilogo").innerHTML = s;
+
 }
+
