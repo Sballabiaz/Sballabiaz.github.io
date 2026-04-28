@@ -45,6 +45,7 @@ function Riepilogo()
     s+= "<br> è stato inviato all'email: " + email + "<br> riceverà notifiche: " + notifiche;
     document.getElementById("ciao2").innerHTML = s;
 }
+
 function setCookie(nome, valore, giorni){
     let data = new Date();
     data.setTime(data.getTime() + (giorni * 24 * 60 * 60 * 1000));
@@ -61,8 +62,6 @@ function getCookie(nome){
     }
     return "";
 }
-
-
 
 function riempi()
 {
