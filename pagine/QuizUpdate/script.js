@@ -29,7 +29,7 @@ function prossimaPagina3(){
     let sceltaStatica = document.getElementById("statiche");
     let valoreDaSalvare = "";
 
-    if(sceltaStatica && sceltaStatica.checked){
+    if(sceltaStatica.checked){
         valoreDaSalvare = "statiche";
     } else {
         valoreDaSalvare = "dinamiche";
@@ -41,13 +41,8 @@ function prossimaPagina3(){
 
 function prossimaPagina4(){
     
-    let tipo = document.querySelectorAll(".ciao")
-    if (tipo[0] != "integer" && tipo[1] != "integer" && tipo[2] != "integer"){
-        setCookie("risposta4", "giusta",1)
-    } else{
-        setCookie("risposta4", "sbagliata", 1);
-    }
-    
+    let tipo = document.querySelectorAll(".ciao");
+    setCookie("risposta4", tipo, 1);
     window.location.href = "domanda5.html";
 }
 
@@ -75,6 +70,8 @@ function getCookie(nome){
 }
 
 function Riepilogo(){
+    
+
     let risp1 = getCookie("risposta1")
     let scritto = [];
     
@@ -100,7 +97,11 @@ function Riepilogo(){
     }
 
     let risp4 = getCookie("risposta4");
-
+    if (risp4[0] != "integer" && risp4[1] != "integer" && risp4[2] != "integer"){
+        scritto.push("giusta");
+    } else{
+        scritto.push("sbagliata");
+    }
     let risp5 = getCookie("risposta5");
     if(risp5 == "byte"){
         scritto.push("giusta");
@@ -112,8 +113,8 @@ function Riepilogo(){
     s += "risposta 1: " + scritto[0] + "<br>";
     s += "risposta 2: " + scritto[1] + "<br>"
     s += "risposta 3: " + scritto[2] + "<br>"
-    s += "risposta 4: " + risp4 + "<br>"
-    s += "risposta 5: " + scritto[3] + "<br>"
+    s += "risposta 4: " + scritto[3] + "<br>"
+    s += "risposta 5: " + scritto[4] + "<br>"
     document.getElementById("ciao").innerHTML = s;
 
 }
