@@ -96,7 +96,6 @@ function stampaPunteggioUtente(){
    let stringaFinale= document.getElementById("txtPunteggio2");
    stringaFinale.value = s;
 
-
 }
 
 

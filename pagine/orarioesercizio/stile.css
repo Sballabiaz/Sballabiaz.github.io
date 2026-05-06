@@ -1,68 +1,65 @@
 body{
-    background:  black;
+    background-color: black;
     font-family: Arial, sans-serif;
     margin:0;
     padding: 40px;
 }
+    .pagina{
+        background-color: rgb(64, 64, 68);
+        padding: 50px;
+        border-radius: 25px;
+        width: 75%;
+        margin: auto;
+    }
 
-.pagina{
-    background-color: #333;
-    padding:50px;
-    border-radius:25px;
-    width:75%;
-    margin:aut0;
-}
+    /* Titolo */
+    .titolo{
+        color: white;
+        font-size: 22px;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .tabella{
+       display: flex;
+       justify-content: center;
+    }
+    table{
+       background-color: white;
+       border-collapse: collapse;
+    }
 
-/*titolo*/
-.titolo{
-    color:white;
-    font-size:22px;
-    text-align:center;
-    margin-bottom:50px;
-}
-
-.contenitore-tabella{
-    display:flex;
-    justify-content: center;
-}
-
-table{
-    background-color: white;
-    border-collapse: collapse;
-}
-
-caption{
-    color:white;
-    font-weight: bold;
-    font-size: 30;
-    padding:20px;
-}
-
+    caption{
+        color: white;
+        font-weight: bold;
+        font-size: 30px;
+        padding:20px;
+    }
 thead th{
-    background-color: #333;
+    background-color: black;
     color:white;
-    padding:14px;
-    font-size:18px;
+    padding: 14px;
+    font-size: 18px;
 }
-
 td{
-    border: 1px solid grey;
-    padding:12px 16px;
-    text-align:center;
-    font-size:16px;
+  border : 1px solid rgb(70, 70, 70);
+  padding: 4px 4px;
+  text-align: center;
+  font-size: 16px;
+  color: blue;
+  font-weight: bold;
 }
-
 .orario{
-    background-color: grey;
-    color:black;
+    background-color: gray;
+    color: blue;
+    padding:4px;
     font-weight: bold;
-    padding: 12px;
-    border: 1px solid grey;
+    border:1px solid grey;
+    
 }
 
 a{
-    text-decoration: nome;
-    color:#2544bf;
+    text-decoration: none;
+    color: blue;
     font-weight: bold;
 }
 
@@ -70,6 +67,23 @@ a:hover{
     color:red;
 }
 
-tbody td:thover{
+tbody td:hover{
     background-color: aquamarine;
+}
+
+tbody th{
+    color: blue;
+}
+@media (max-width: 635px) {
+    table{
+        font-size: 10px;
+    }
+    tbody td{
+        padding: 2px 2px;
+        font-size: 10px;
+    }
+    thead th{
+        padding: 2px;
+        font-size: 12px;
+    }
 }
