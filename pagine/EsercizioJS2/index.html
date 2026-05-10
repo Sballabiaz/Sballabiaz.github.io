@@ -1,7 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="it">
 <head>
-    <title>Esempio: cambiare l'immagine con JavaScript</title>
+    <meta charset="UTF-8">
+    <title>Cambiare immagine con JS - Marco Ballabio</title>
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="https://Sballabiaz.github.io/style.css">
+
     <script>
         // Funzione che accende la "lampadina"
         function accendiLuce() {
@@ -17,17 +21,39 @@
 
 <body>
 
-    <h2>What Can JavaScript Do?</h2>
+    <nav id="nav-principal">
+        <ul>
+            <li><a href="../../index.html" class="nav-link">Home</a></li>
+            <li><a href="../../index.html#about" class="nav-link">Chi sono</a></li>
+            <li><a href="../../index.html#competenze" class="nav-link">Competenze</a></li>
+            <li><a href="../../index.html#progetti" class="nav-link">Progetti</a></li>
+            <li><a href="../../index.html#contatti" class="nav-link">Contatti</a></li>
+        </ul>
+    </nav>
 
-    <p>JavaScript can change HTML attribute values.</p>
+    <section class="sezione">
+        <h2>What Can JavaScript Do?</h2>
 
-    <p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+        <p>JavaScript can change HTML attribute values.</p>
 
-    <button type="button" onclick="accendiLuce()">Turn on the light</button>
+        <p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
 
-    <img id="myImage" src="images/lampadinaspenta.jpg" style="width:100px">
+        <div style="text-align: center; margin-top: 20px;">
+            <button type="button" onclick="accendiLuce()" class="btn-small">Turn on the light</button>
 
-    <button type="button" onclick="spegniLuce()">Turn off the light</button>
+            <img id="myImage" src="images/lampadinaspenta.jpg" style="width:100px; vertical-align: middle; margin: 0 20px;">
+
+            <button type="button" onclick="spegniLuce()" class="btn-small">Turn off the light</button>
+        </div>
+    </section>
+
+    <footer class="footer-principale">
+        <p>© 2026 Marco Ballabio — <a href="../../index.html" style="color: white; text-decoration: underline;">Torna alla Home</a></p>
+        <ul>
+            <li><a href="https://github.com/Sballabiaz" class="footer-link">GitHub</a></li>
+            <li><a href="#" class="footer-link">LinkedIn</a></li>
+        </ul>
+    </footer>
 
 </body>
 </html>

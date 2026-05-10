@@ -15,41 +15,47 @@ function getCookie(nome){   //funzione per prendere i cookie
     return "";
 }
 
-function SalvataggioInserimento(){  //funzione per controllare i caratteri di nome e cognome, settare i cookie e portare alla pagina dopo
-
+function SalvataggioInserimento() {
     let nome = document.getElementById("nome").value;
     let cognome = document.getElementById("cognome").value;
 
-    if(nome.length < 3 || cognome.length < 3){
-        alert("il nome e/o il cognome non hanno abbastanza caratteri")
+    if (nome.length < 3 || cognome.length < 3) {
+        alert("Il nome e il cognome devono avere almeno 3 caratteri.");
         return;
-    } 
-
-    for(let i = 0; i < nome.length; i++){
-        if(nome[i] > 'a' && nome[i] < 'Z'){
-        } else{
-            alert("errore nella scrittura del nome")
-            return;
-        }
     }
-    
-    for(let i = 0; i < cognome.length; i++){
-        if(cognome[i] > 'a' && cognome[i] < ''){
-        } else{
-            alert("errore nella scrittura del cognome")
+
+    if (nome[0] < 'A' || nome[0] > 'Z') {
+        alert("La prima lettera del nome deve essere maiuscola.");
+        return;
+    }
+
+    for (let i = 0; i < nome.length; i++) {
+        let char = nome[i];
+        // Verifica che sia una lettera (maiuscola o minuscola)
+        if (!((char >= 'A' && char <= 'Z') || (char >= 'a' && char <= 'z'))) {
+            alert("Il nome contiene caratteri speciali o numeri non ammessi.");
             return;
         }
     }
 
-    if (nome[0] <'A' && nome[0] > 'Z' && cognome[0] < 'A' && cognome[0] > 'Z'){
-        alert("problema nel primo carattere del nome e/o del cognome");
+    if (cognome[0] < 'A' || cognome[0] > 'Z') {
+        alert("La prima lettera del cognome deve essere maiuscola.");
         return;
     }
-    
+
+    for (let i = 0; i < cognome.length; i++) {
+        let char = cognome[i];
+        // Verifica che sia una lettera (maiuscola o minuscola)
+        if (!((char >= 'A' && char <= 'Z') || (char >= 'a' && char <= 'z'))) {
+            alert("Il cognome contiene caratteri speciali o numeri non ammessi.");
+            return;
+        }
+    }
+
     setCookie("nome", nome, 1);
     setCookie("cognome", cognome, 1);
-    window.location.href = "SelezioneCitta.html"
-
+    window.location.href = "SelezioneCitta.html";
+    
 }
 
 let VettCitta = ["Milano", "Bergamo", "Cremona", "Lecco", "Lodi", "Mantova", "Monza", "Pavia", "Sondrio", "Varese"]

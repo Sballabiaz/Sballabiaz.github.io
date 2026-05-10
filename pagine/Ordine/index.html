@@ -1,69 +1,98 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <title>Ordine</title>
+    <meta charset="UTF-8">
+    <title>Ordine - Marco Ballabio</title>
+    <!-- Collegamento al tuo CSS principale -->
+    <link rel="stylesheet" href="../../style.css">
 </head>
 <body>
-    <h2>Esercizio Invio Di Un Ordine</h2>
-    <table border="3px" solid>
-        <thead>
-         <tr>
-            <th>Q.ta</th>
-            <th>Descrizione</th>
-            <th>Costo Unitario</th>
-            <th>Totale</th>
-         </tr>
-        </thead> 
-         <tr>
-            <td><input type="number" id="Q1" value="0"></td>
-            <td>mouse</td>
-            <td>16$</td>
-            <td id="tot1">0</td>
-         </tr>
-         <tr>
-            <td><input type="number" id="Q2" value="0"></td>
-            <td>tastiera 105 tasti</td>
-            <td>25$</td>
-            <td id="tot2">0</td>
-         </tr>
-         <tr>
-            <td><input type="number" id="Q3" value="0"></td>
-            <td>stampante deskjet colori</td>
-            <td>350$</td>
-            <td id="tot3">0</td>
-         </tr>
-         <tr>
-            <td><input type="number" id="Q4" value="0"></td>
-            <td>scanner A4 colori</td>
-            <td>200$</td>
-            <td id="tot4">0</td>
-         </tr>
-         <tr>
-            <td></td>
-            <td></td>
-            <td><button onclick="Totale()">TOTALE ORDINI -></button></td>
-            <td id="totFin">0</td>
-         </tr>
-    </table>
-    <br>
-    <br>
-    <label>Desidero ricevere notifiche </label>
-    <input type="radio" id="radio1" name="ciao"><label>Si</label>
-    <input type="radio" id="radio2" name="ciao" checked><label>No</label>
-    <br>
-    <br>
-    <label>E-mail: </label>
-    <input type="email" id="txtEmail">
-    <br>
-    <br>
-    <label>Pagamento: </label>
-    <select id="combo1"></select>
-    <br>
-    <br>
-    <button onclick="inviaOrdine()" id="buttonFinale">INVIA ORDINE</button>
-    <br>
-    <br>
-    <a href="https://Sballabiaz.github.io/index.html">← Torna alla Home</a>
-      <script src="script.js"></script>
+
+    <!-- Nav bar principale del portfolio -->
+    <nav id="nav-principale">
+        <ul>
+            <li><a href="../../index.html" class="nav-link">Home</a></li>
+            <li><a href="../../index.html#about" class="nav-link">Chi sono</a></li>
+            <li><a href="../../index.html#competenze" class="nav-link">Competenze</a></li>
+            <li><a href="../../index.html#progetti" class="nav-link">Progetti</a></li>
+            <li><a href="../../index.html#contatti" class="nav-link">Contatti</a></li>
+        </ul>
+    </nav>
+
+    <section class="sezione">
+        <h2>Esercizio Invio Di Un Ordine</h2>
+        
+        <table border="3px" style="border-collapse: collapse; width: 100%; max-width: 600px;">
+            <thead>
+             <tr>
+                <th>Q.ta</th>
+                <th>Descrizione</th>
+                <th>Costo Unitario</th>
+                <th>Totale</th>
+             </tr>
+            </thead> 
+            <tbody>
+             <tr>
+                <td><input type="number" id="Q1" value="0" min="0"></td>
+                <td>mouse</td>
+                <td>16$</td>
+                <td id="tot1">0</td>
+             </tr>
+             <tr>
+                <td><input type="number" id="Q2" value="0" min="0"></td>
+                <td>tastiera 105 tasti</td>
+                <td>25$</td>
+                <td id="tot2">0</td>
+             </tr>
+             <tr>
+                <td><input type="number" id="Q3" value="0" min="0"></td>
+                <td>stampante deskjet colori</td>
+                <td>350$</td>
+                <td id="tot3">0</td>
+             </tr>
+             <tr>
+                <td><input type="number" id="Q4" value="0" min="0"></td>
+                <td>scanner A4 colori</td>
+                <td>200$</td>
+                <td id="tot4">0</td>
+             </tr>
+             <tr>
+                <td></td>
+                <td></td>
+                <td><button onclick="Totale()" class="btn-small">TOTALE ORDINI -></button></td>
+                <td id="totFin"><strong>0</strong></td>
+             </tr>
+            </tbody>
+        </table>
+
+        <br>
+        <div class="form-ordine">
+            <label>Desidero ricevere notifiche </label>
+            <input type="radio" id="radio1" name="ciao"><label for="radio1">Si</label>
+            <input type="radio" id="radio2" name="ciao" checked><label for="radio2">No</label>
+            <br><br>
+
+            <label for="txtEmail">E-mail: </label>
+            <input type="email" id="txtEmail">
+            <br><br>
+
+            <label for="combo1">Pagamento: </label>
+            <select id="combo1"></select>
+            <br><br>
+
+            <button onclick="inviaOrdine()" id="buttonFinale" class="btn">INVIA ORDINE</button>
+        </div>
+    </section>
+
+    <!-- Footer principale del portfolio -->
+    <footer class="footer-principale">
+        <p>© 2026 Marco Ballabio — <a href="../../index.html" style="color: white; text-decoration: underline;">Torna alla Home</a></p>
+        <ul>
+            <li><a href="https://github.com/Sballabiaz" class="footer-link">GitHub</a></li>
+            <li><a href="#" class="footer-link">LinkedIn</a></li>
+        </ul>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

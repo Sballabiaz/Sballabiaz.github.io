@@ -1,7 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="it">
     <head> 
-        <title>Esempio di funzione JavaScript</title>
+        <meta charset="UTF-8">
+        <title>Esempio di funzione JavaScript - Marco Ballabio</title>
+        <link rel="stylesheet" href="../../style.css">
+        <link rel="stylesheet" href="https://Sballabiaz.github.io/style.css">
+        
         <script>
             
             function saluta() {
@@ -10,7 +14,7 @@
 
             window.onload = function(){
                 let bottone = document.getElementById("cliccaBottone");
-                bottone.addEventListener("click", saluta());
+                bottone.addEventListener("click", saluta); 
             }
             
 
@@ -23,13 +27,33 @@
 
     <body>
 
-        <h2>What Can JavaScript Do?</h2>
+        <nav id="nav-principale">
+            <ul>
+                <li><a href="../../index.html" class="nav-link">Home</a></li>
+                <li><a href="../../index.html#about" class="nav-link">Chi sono</a></li>
+                <li><a href="../../index.html#competenze" class="nav-link">Competenze</a></li>
+                <li><a href="../../index.html#progetti" class="nav-link">Progetti</a></li>
+                <li><a href="../../index.html#contatti" class="nav-link">Contatti</a></li>
+            </ul>
+        </nav>
 
-        <p id="demo">JavaScript can change HTML content.</p>
+        <section class="sezione">
+            <h2>What Can JavaScript Do?</h2>
 
-        <button type="button" onclick="cambiaTesto()">Click Me!</button>
+            <p id="demo">JavaScript can change HTML content.</p>
 
-        <button type="button" id = "cliccaBottone">Clicca qui!</button>
+            <button type="button" onclick="cambiaTesto()" class="btn-small">Click Me!</button>
+
+            <button type="button" id="cliccaBottone" class="btn-small">Clicca qui!</button>
+        </section>
+
+        <footer class="footer-principale">
+            <p>© 2026 Marco Ballabio — <a href="../../index.html" style="color: white; text-decoration: underline;">Torna alla Home</a></p>
+            <ul>
+                <li><a href="https://github.com/Sballabiaz" class="footer-link">GitHub</a></li>
+                <li><a href="#" class="footer-link">LinkedIn</a></li>
+            </ul>
+        </footer>
 
     </body>
 </html>

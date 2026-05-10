@@ -1,11 +1,37 @@
-<html>
+<!DOCTYPE html>
+<html lang="it">
     <head>
+        <meta charset="UTF-8">
+        <title>Inserimento Dati - Marco Ballabio</title>
+        <link rel="stylesheet" href="../../style.css">
     </head>
     <body>
-        <h3>Inserimento dati</h3>
-        Nome: <input type="text" id ="nome"><br><br>
-        Cognome: <input type="text" id ="cognome"><br><br>
-        <button onclick = "salvaDati()">Invia</button>
+
+        <nav id="nav-principale">
+            <ul>
+                <li><a href="../../index.html" class="nav-link">Home</a></li>
+                <li><a href="../../index.html#about" class="nav-link">Chi sono</a></li>
+                <li><a href="../../index.html#competenze" class="nav-link">Competenze</a></li>
+                <li><a href="../../index.html#progetti" class="nav-link">Progetti</a></li>
+                <li><a href="../../index.html#contatti" class="nav-link">Contatti</a></li>
+            </ul>
+        </nav>
+
+        <section class="sezione">
+            <h3>Inserimento dati</h3>
+            Nome: <input type="text" id ="nome"><br><br>
+            Cognome: <input type="text" id ="cognome"><br><br>
+            <button onclick = "salvaDati()" class="btn-small">Invia</button>
+        </section>
+
+        <footer class="footer-principale">
+            <p>© 2026 Marco Ballabio — <a href="../../index.html" style="color: white; text-decoration: underline;">Torna alla Home</a></p>
+            <ul>
+                <li><a href="https://github.com/Sballabiaz" class="footer-link">GitHub</a></li>
+                <li><a href="#" class="footer-link">LinkedIn</a></li>
+            </ul>
+        </footer>
+
         <script src ="script.js"></script>
     </body>
 </html>

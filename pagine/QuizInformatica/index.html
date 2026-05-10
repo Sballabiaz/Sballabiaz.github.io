@@ -1,64 +1,92 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <title>Quiz</title>
+    <meta charset="UTF-8">
+    <title>Quiz Informatica - Marco Ballabio</title>
+    <!-- Collegamento al tuo CSS principale -->
+    <link rel="stylesheet" href="../../style.css">
 </head>
-<body onload = riempiMese() >
-    <h2>Quiz Di Informatica</h2>
-    <h3>Dati anagrafici</h3>
-    <label>Cognome: </label>
-    <input type="text" id="textBoxCognome">
-    <label> Nome: </label>
-    <input type="text" id="textBoxNome">
-    <br>
-    <br>
-    <label>Data di nascita</label>
-    <br>
-    <br>
-    <label>Giorno: </label>
-    <input type="text" id="textBoxGiorno">
-    <label> Mese: </label>
-    <select id="comboBoxMesi"></select>
-    <label>Anno: </label>
-    <input type="text" id="textBoxAnno">
-    <br>
-    <h2>Domande</h2>
-    <h4>1 Qual'è il linguaggio utilizzato per creare e modificare database? (in maiuscolo)</h4>
-    <input type="text" id="risposta1">
-    <h4>2 Quanti valori può assumere una variabile booleana? </h4>
-    <select id="risposta2"></select>
-    <h4>3  Quali sono le librerie caricate a run-time? </h4>
-    <input type="radio"  id="statiche" name="librerie" value="statiche" checked>
-    <label>Statiche</label>
-    <br>
-    <input type="radio"  id="dinamiche" name="librerie" value="dinamiche">
-    <label>Dinamiche</label>
-    <br>
-    <h4>4  Quali tra queste sono parole chiave in C++? </h4>
-    <input type="checkbox" id="check1">
-    <label>void</label>
-    <br>
-    <input type="checkbox" id="check2">
-    <label>integer</label>
-    <br>
-    <input type="checkbox" id="check3">
-    <label>char</label>
-    <h4>5  8 bit corrispondono a un... </h4>
-    <input type="text" id="risposta5" >
-    <br>
-    <h2>Esito</h2>
-    <button onclick = "stampaPunteggio()">Elabora</button>
-    <input type="text" id="txtPunteggio" readonly>
-    <button onclick = "stampaPunteggioUtente()">Utente con punteggio</button>
-    <input type="text" id="txtPunteggio2" readonly>
-    <br>
-    <br>
-    <br>
-    
-    <a href="https://Sballabiaz.github.io/index.html">← Torna alla Home</a>
+<body onload="riempiMese()">
 
-    <br>
-    
+    <!-- Nav bar principale del portfolio -->
+    <nav id="nav-principale">
+        <ul>
+            <li><a href="../../index.html" class="nav-link">Home</a></li>
+            <li><a href="../../index.html#about" class="nav-link">Chi sono</a></li>
+            <li><a href="../../index.html#competenze" class="nav-link">Competenze</a></li>
+            <li><a href="../../index.html#progetti" class="nav-link">Progetti</a></li>
+            <li><a href="../../index.html#contatti" class="nav-link">Contatti</a></li>
+        </ul>
+    </nav>
+
+    <section class="sezione">
+        <h2>Quiz Di Informatica</h2>
+        
+        <fieldset style="border: 1px solid #ccc; padding: 15px; margin-bottom: 20px;">
+            <legend><h3>Dati anagrafici</h3></legend>
+            <label>Cognome: </label>
+            <input type="text" id="textBoxCognome">
+            <label> Nome: </label>
+            <input type="text" id="textBoxNome">
+            <br><br>
+            <label><strong>Data di nascita</strong></label>
+            <br><br>
+            <label>Giorno: </label>
+            <input type="text" id="textBoxGiorno" style="width: 50px;">
+            <label> Mese: </label>
+            <select id="comboBoxMesi"></select>
+            <label>Anno: </label>
+            <input type="text" id="textBoxAnno" style="width: 70px;">
+        </fieldset>
+
+        <h2>Domande</h2>
+        
+        <h4>1. Qual è il linguaggio utilizzato per creare e modificare database? (in maiuscolo)</h4>
+        <input type="text" id="risposta1">
+
+        <h4>2. Quanti valori può assumere una variabile booleana? </h4>
+        <select id="risposta2"></select>
+
+        <h4>3. Quali sono le librerie caricate a run-time? </h4>
+        <input type="radio" id="statiche" name="librerie" value="statiche" checked>
+        <label for="statiche">Statiche</label>
+        <br>
+        <input type="radio" id="dinamiche" name="librerie" value="dinamiche">
+        <label for="dinamiche">Dinamiche</label>
+
+        <h4>4. Quali tra queste sono parole chiave in C++? </h4>
+        <input type="checkbox" id="check1">
+        <label for="check1">void</label>
+        <br>
+        <input type="checkbox" id="check2">
+        <label for="check2">integer</label>
+        <br>
+        <input type="checkbox" id="check3">
+        <label for="check3">char</label>
+
+        <h4>5. 8 bit corrispondono a un... </h4>
+        <input type="text" id="risposta5">
+        
+        <br><br>
+        <hr>
+        
+        <h2>Esito</h2>
+        <button onclick="stampaPunteggio()" class="btn-small">Elabora</button>
+        <input type="text" id="txtPunteggio" readonly>
+        <br><br>
+        <button onclick="stampaPunteggioUtente()" class="btn-small">Utente con punteggio</button>
+        <input type="text" id="txtPunteggio2" readonly style="width: 300px;">
+    </section>
+
+    <!-- Footer principale del portfolio -->
+    <footer class="footer-principale">
+        <p>© 2026 Marco Ballabio — <a href="../../index.html" style="color: white; text-decoration: underline;">Torna alla Home</a></p>
+        <ul>
+            <li><a href="https://github.com/Sballabiaz" class="footer-link">GitHub</a></li>
+            <li><a href="#" class="footer-link">LinkedIn</a></li>
+        </ul>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>

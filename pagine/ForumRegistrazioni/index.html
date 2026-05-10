@@ -1,45 +1,68 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>ForumRegistrazione</title>
-        <link rel="stylesheet" href="stile.css">
-    </head>
-    <body>
-        <h1> FORUM REGISTAZIONE</h1>
-        <input type="checkbox" id ="calcio" checked class="hobby" value="calcio"> 
-        <label>Calcio</label>
-        <br> 
-        <input type="checkbox" id="basket" class="hobby" value="basket"> 
-        <label>Basket</label> 
-        <br>
-        <input type="checkbox" id = "nuoto" class="hobby" value="nuoto"> 
-        <label>Nuoto</label> 
-        <br>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Forum Registrazione - Marco Ballabio</title>
+    <link rel="stylesheet" href="stile.css">
+    <link rel="stylesheet" href="https://Sballabiaz.github.io/style.css">
+</head>
+<body>
 
-        <input type = "radio" id="maschio" name="sesso" value="maschio">
-        <label>Maschio</label>
-        <br>
-        <input type = "radio" id="femmina" name="sesso" value="femmina">
-        <label>Femmina</label>
-        <br>
-        <br>
-        <br>
+    <nav id="nav-principale">
+        <ul>
+            <li><a href="../../index.html" class="nav-link">Home</a></li>
+            <li><a href="../../index.html#about" class="nav-link">Chi sono</a></li>
+            <li><a href="../../index.html#competenze" class="nav-link">Competenze</a></li>
+            <li><a href="../../index.html#progetti" class="nav-link">Progetti</a></li>
+            <li><a href="../../index.html#contatti" class="nav-link">Contatti</a></li>
+        </ul>
+    </nav>
 
-        <select id="menu">
-            <option value="1">Option 1</option>
-            <option value="2">Option 2</option>
-            <option value="3">Option 3</option>
-        </select>
-        <button onclick="StampaSelezionato()">Stampa selezionato</button>
-        <button onclick="riempiConAnni()">Riempi con anni</button>
-
-        <input type="text" id="textbox">
-
-        <footer>
-            <a href="../../index.html">Torna alla home</a>
-        </footer>
+    <section class="sezione">
+        <h1>FORUM REGISTRAZIONE</h1>
         
-        <script src="script.js"></script>
-        
-    </body>
+        <div class="container-form">
+            <input type="checkbox" id="calcio" checked class="hobby" value="calcio"> 
+            <label for="calcio">Calcio</label>
+            <br> 
+            <input type="checkbox" id="basket" class="hobby" value="basket"> 
+            <label for="basket">Basket</label> 
+            <br>
+            <input type="checkbox" id="nuoto" class="hobby" value="nuoto"> 
+            <label for="nuoto">Nuoto</label> 
+            <br><br>
+
+            <input type="radio" id="maschio" name="sesso" value="maschio">
+            <label for="maschio">Maschio</label>
+            <br>
+            <input type="radio" id="femmina" name="sesso" value="femmina">
+            <label for="femmina">Femmina</label>
+            <br><br>
+
+            <select id="menu">
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+            </select>
+            <br><br>
+            
+            <button onclick="StampaSelezionato()" class="btn-small">Stampa selezionato</button>
+            <button onclick="riempiConAnni()" class="btn-small">Riempi con anni</button>
+            <br><br>
+
+            <input type="text" id="textbox" placeholder="Risultato...">
+        </div>
+    </section>
+
+    <footer class="footer-principale">
+        <p>© 2026 Marco Ballabio — <a href="../../index.html" style="color: white; text-decoration: underline;">Torna alla Home</a></p>
+        <ul>
+            <li><a href="https://github.com/Sballabiaz" class="footer-link">GitHub</a></li>
+            <li><a href="#" class="footer-link">LinkedIn</a></li>
+        </ul>
+    </footer>
+    
+    <script src="script.js"></script>
+    
+</body>
 </html>

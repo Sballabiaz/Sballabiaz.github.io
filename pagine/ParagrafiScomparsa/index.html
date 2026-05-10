@@ -1,16 +1,30 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <title>Introduzione al web</title>
+    <meta charset="UTF-8">
+    <title>Introduzione al web - Marco Ballabio</title>
     <link rel="stylesheet" href="stile.css">
+    <!-- Collegamento al CSS principale del portfolio -->
+    <link rel="stylesheet" href="../../style.css">
 </head>
 <body>
-    <header>
-        <h1>
-            Guida ai Fondamenti del Web
-        </h1>
+
+    <!-- Nav bar principale del portfolio -->
+    <nav id="nav-principale">
+        <ul>
+            <li><a href="../../index.html" class="nav-link">Home</a></li>
+            <li><a href="../../index.html#about" class="nav-link">Chi sono</a></li>
+            <li><a href="../../index.html#competenze" class="nav-link">Competenze</a></li>
+            <li><a href="../../index.html#progetti" class="nav-link">Progetti</a></li>
+            <li><a href="../../index.html#contatti" class="nav-link">Contatti</a></li>
+        </ul>
+    </nav>
+
+    <header class="sezione" style="text-align: center; padding-top: 40px;">
+        <h1>Guida ai Fondamenti del Web</h1>
         <p>Scopri HTML, CSS e JavaScript cliccando sui titoli sottostanti.</p>
     </header>
+
     <main>
         <div class="sezione">
             <h3 class="titolo">HTML</h3>
@@ -25,7 +39,16 @@
             <p class="contenuto">JavaScript è un linguaggio di programmazione che permette di rendere interattive le pagine web. Consente di gestire eventi, validare moduli, manipolare il DOM e creare animazioni dinamiche.</p>
         </div>
     </main>
+
+    <!-- Footer principale del portfolio -->
+    <footer class="footer-principale">
+        <p>© 2026 Marco Ballabio — <a href="../../index.html" style="color: white; text-decoration: underline;">Torna alla Home</a></p>
+        <ul>
+            <li><a href="https://github.com/Sballabiaz" class="footer-link">GitHub</a></li>
+            <li><a href="#" class="footer-link">LinkedIn</a></li>
+        </ul>
+    </footer>
+
     <script src="script.js"></script>
-    <a href="https://Sballabiaz.github.io/index.html">← Torna alla Home</a>
 </body>
 </html>
