@@ -35,8 +35,8 @@ function aggiungiStudente() {
 }
 
 function mostraStudenti() {
-    let corpo = document.getElementById("corpoTabella");
-    corpo.innerHTML = "";
+    let s = document.getElementById("corpoTabella");
+    s.innerHTML = "";
 
     for (let i = 0; i < studenti.length; i++) {
         let riga = `
@@ -50,7 +50,7 @@ function mostraStudenti() {
                     </button>
                 </td>
             </tr>`;
-        corpo.innerHTML += riga;
+        s.innerHTML += riga;
     }
 }
 
